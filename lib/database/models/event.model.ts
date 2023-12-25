@@ -12,8 +12,8 @@ export interface IEvent extends Document {
   price?: string
   isFree?: boolean
   url?: string
-  category?: { _id: string; name: string } // Assuming Category model uses ObjectId
-  organizer?: { _id: string; firstName: string; lastName: string } // Assuming User model uses ObjectId
+  category?: { _id: string, name: string } // Assuming Category model uses ObjectId
+  organizer?: { _id: string, firstName: string, lastName: string } // Assuming User model uses ObjectId
 }
 
 const EventSchema = new Schema({
